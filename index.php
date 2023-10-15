@@ -112,7 +112,7 @@ require_once('koneksi.php');
     <!-- Service Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex py-5 px-4">
                         <i class="fa fa-3x fa-headset text-primary flex-shrink-0"></i>
@@ -151,9 +151,9 @@ require_once('koneksi.php');
                 <h6 class="text-primary text-uppercase">// Our Services //</h6>
                 <h1 class="mb-5">Jelajahi layanan kami</h1>
             </div>
-            <div class="row g-4  wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-lg-3 col-md-3 wow fadeInUp text-center">
-                <a href="sewamotor.php" > <img src="carserv/img/mot.png" class="services_img" width="250px" 
+            <div class="row g-4  wow fadeInUp justify-content-center" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-sm-5 wow fadeInUp text-center">
+                <a href="sewamotor.php" > <img src="carserv/img/mot.png" class="services_img" width="220px" 
                   style="max-width:540px; 
                               box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
                               border-radius: 20px;  
@@ -162,8 +162,8 @@ require_once('koneksi.php');
                 ></a>
                 <a href="sewamotor.php"><button class="btn btn-primary mt-4" style="border-radius:100px;">SELENGKAPNYA</button></a>
                 </div>  
-                <div class="col-lg-3 col-md-3 wow fadeInUp  text-center">
-                <a href="sewamobil.php" > <img src="carserv/img/mob.png" class="services_img" width="250px" 
+                <div class="col-lg-3 col-sm-5 wow fadeInUp  text-center">
+                <a href="sewamobil.php" > <img src="carserv/img/mob.png" class="services_img" width="220px" 
                   style="max-width:540px; 
                               box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
                               border-radius: 20px;  
@@ -171,8 +171,8 @@ require_once('koneksi.php');
                 ></a>
                 <a href="sewamobil.php"><button class="btn btn-primary mt-4" style="border-radius:100px;">SELENGKAPNYA</button></a>
                 </div>  
-                <div class="col-lg-3 col-md-3 wow fadeInUp  text-center">
-                <a href="pc.php" > <img src="carserv/img/pri.png" class="services_img" width="250px" 
+                <div class="col-lg-3 col-sm-5 wow fadeInUp  text-center">
+                <a href="pc.php" > <img src="carserv/img/pri.png" class="services_img" width="220px" 
                   style="max-width:540px; 
                               box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
                               border-radius: 20px;  
@@ -180,8 +180,8 @@ require_once('koneksi.php');
                 ></a>
                 <a href="pc.php"><button class="btn btn-primary mt-4" style="border-radius:100px;">SELENGKAPNYA</button></a>
                 </div>  
-                <div class="col-lg-3 col-md-3 wow fadeInUp  text-center">
-                <a href="pariwisata.php" > <img src="carserv/img/par.png" class="services_img" width="250px" 
+                <div class="col-lg-3 col-sm-5 wow fadeInUp  text-center">
+                <a href="pariwisata.php" > <img src="carserv/img/par.png" class="services_img" width="220px" 
                   style="max-width:540px; 
                               box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
                               border-radius: 20px;  
@@ -253,21 +253,21 @@ require_once('koneksi.php');
         <div class="container">
             <div class="row g-3">                
                 <?php foreach($datamotor as $motor) {?>
-                <div class="col-md-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.3s">
+                <div class="col-md-4 col-lg-4 text-center wow fadeIn" data-wow-delay="0.3s">
                     <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
                     <h2 class="text-white mb-2" data-toggle="counter-up"><?=$motor?></h2>
                     <p class="text-white mb-0">Pilihan Motor</p>
                 </div>
                 <?php } ?>
                 <?php foreach($datamobil as $mobil) {?>
-                <div class="col-md-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.7s">
+                <div class="col-md-4 col-lg-4 text-center wow fadeIn" data-wow-delay="0.7s">
                     <i class="fa fa-car fa-2x text-white mb-3"></i>
                     <h2 class="text-white mb-2" data-toggle="counter-up"><?=$mobil?></h2>
                     <p class="text-white mb-0">Pilihan Mobil</p>
                 </div>
                 <?php } ?>
                 <?php foreach($datapc as $pc) {?>
-                <div class="col-md-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-md-4 col-lg-4 text-center wow fadeIn" data-wow-delay="0.1s">
                     <i class="fa fa-check fa-2x text-white mb-3"></i>
                     <h2 class="text-white mb-2" data-toggle="counter-up"><?=$pc?></h2>
                     <p class="text-white mb-0">Rute Private Charter</p>

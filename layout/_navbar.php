@@ -1,7 +1,7 @@
  <!-- Navbar Start -->
  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.php" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-danger"><i class=""></i>RG-Trans</h2>
+        <a href="index.php" class="ms-5 mt-3 mb-3">
+            <img src="carserv/img/rg.png" width="150px"/>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>

@@ -1,8 +1,8 @@
 <?php
-   require_once('koneksi.php'); 
-   $query = "SELECT * FROM s_motor";
-   $hasil = mysqli_query($conn,$query);
-   $data = mysqli_fetch_array($hasil);
+require_once('koneksi.php');
+$query = "SELECT * FROM s_motor";
+$hasil = mysqli_query($conn, $query);
+$data = mysqli_fetch_array($hasil);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,12 +14,12 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
     <?php require_once('layout/_css.php') ?>
-    
+
 </head>
 
 <body>
-   <?php require_once('layout/_topbar.php') ?>
-   <?php require_once('layout/_navbar.php') ?>
+    <?php require_once('layout/_topbar.php') ?>
+    <?php require_once('layout/_navbar.php') ?>
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 p-0" style="background-image: url(carserv/img/a.jpg);">
         <div class="container-fluid page-header-inner py-5">
@@ -44,37 +44,33 @@
                 <h2 class="mb-5">Daftar layanan sewa motor</h2>
             </div>
             <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-                <?php foreach($hasil as $data){?>
+                <?php foreach ($hasil as $data) { ?>
                     <div class="col-lg-3 col-md-4 wow fadeInUp text-center">
-                    <h4 class="text-center font-weight-bold"><?=$data['judul']?></h4>
-                <a href="data_motor.php" > <img src="foto_motor/<?=$data['foto']?>" class="services_img" width="255px"
-                  style="max-width:540px; 
+                        <h4 class="text-center font-weight-bold"><?= $data['judul'] ?></h4>
+                        <img src="foto_motor/<?= $data['foto'] ?>" class="services_img" width="220px" style="max-width:540px; 
                               box-shadow:  5px 5px 5px rgba(0,0,0,0.5); 
-                              border-radius: 20px;  
-                              "
-                
-                ></a>
-                <h5 class="text-center font-weight-bold mt-3 mb-0">Harga</h5>
-                  <p class="text-center mt-3">Paket 1 : <?=rupiah($data['paket1'])?> / 2 jam <br>
-                     Paket 2 : <?=rupiah($data['paket2'])?> / 4 jam <br>
-                     Paket 3 : <?=rupiah($data['paket3'])?> / 6 jam <br>
-                     Kelengkapan :  <br><?=$data['kelengkapan']?>
-                  </p>
-                  <div class="text-center md-3">
-                     <a href="<?='booking_motor.php?motor='.$data['id']?>"><button class="btn btn-primary mt-2 font-weight-bold" style="border-radius:100px;" >Booking</button></a>
-                     <a href="https://wa.me/6281333166131" target="blank" >
-                     <img src="logo/waa.png" width="58"/>
-                  </a>  
-                  </div>
-            </div>  
-            <?php }?>
+                              border-radius: 20px;                      ">
+                        <h5 class="text-center font-weight-bold mt-3 mb-0">Harga</h5>
+                        <p class="text-center mt-3">Paket 1 : <?= rupiah($data['paket1']) ?> / 2 jam <br>
+                            Paket 2 : <?= rupiah($data['paket2']) ?> / 4 jam <br>
+                            Paket 3 : <?= rupiah($data['paket3']) ?> / 6 jam <br>
+                            Kelengkapan : <br><?= $data['kelengkapan'] ?>
+                        </p>
+                        <div class="text-center md-3">
+                            <a href="<?= 'booking_motor.php?motor=' . $data['id'] ?>"><button class="btn btn-primary mt-2 font-weight-bold" style="border-radius:100px;">Booking</button></a>
+                            <a href="https://wa.me/6281333166131" target="blank">
+                                <img src="logo/waa.png" width="58" />
+                            </a>
+                        </div>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>
 
 
-   
-   
+
+
     <?php require_once('layout/_footer.php') ?>
     <?php require_once('layout/_js.php') ?>
 </body>
