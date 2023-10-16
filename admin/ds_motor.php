@@ -76,7 +76,7 @@
                             <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong><?= $no;?></strong>
                           </td>
                           <td><?= $data['judul'];?></td>
-                          <td><img src="foto_motor/<?= $data['foto']; ?>" width=100></td>
+                          <td><img src="../foto_motor/<?= $data['foto']; ?>" width=100></td>
                           <td><?= rupiah($data['paket1']);?></td>
                           <td><?= rupiah($data['paket2']);?></td>
                           <td><?= rupiah($data['paket3']);?></td>

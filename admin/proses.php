@@ -6,7 +6,7 @@ session_start();
     if(isset($_POST['data_motor'])){
         $namafile = date('YmdHis').'.jpg';  
         $namalama = $_FILES['foto']['tmp_name'];
-        $folder_upload = "foto_motor/";
+        $folder_upload = "../foto_motor/";
         move_uploaded_file($namalama,$folder_upload.$namafile);
         $tanggal = date('Y-m-d');
         $judul = $_POST['judul'];
@@ -14,17 +14,17 @@ session_start();
         $paket1 = $_POST['paket1'];
         $paket2 = $_POST['paket2'];
         $paket3 = $_POST['paket3'];
-        $query = "INSERT INTO s_motor values(
-            '',
+        $query = "INSERT INTO s_motor(judul,kelengkapan,paket1,paket2,paket3,foto) values(
             '$judul',
             '$kelengkapan',
-            '$paket1',
-            '$paket2',
-            '$paket3',
+             $paket1,
+             $paket2,
+             $paket3,
             '$namafile'
         )";
-        mysqli_query($conn,$query); 
-
+        $cek = mysqli_query($conn,$query); 
+        var_dump($cek);
+        die;
         // arahkan ke halaman lain
         echo"<script>alert('Inputan telah dikirim');</script>";
         echo"<script>window.location.href = 'ds_motor.php';</script>";
@@ -55,7 +55,7 @@ session_start();
             die;
         }else{
             $delfot = $_POST['foto'];
-            unlink('foto_motor/'.$delfot);
+            unlink('../foto_motor/'.$delfot);
             $namafile = date('YmdHis').'.jpg';  
             $namalama = $_FILES['foto']['tmp_name'];
             $folder_upload = "foto_motor/";
