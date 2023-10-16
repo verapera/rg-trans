@@ -74,6 +74,11 @@ if (isset($_POST['edit_motor'])) {
 }
 if (isset($_GET['hapus_motor'])) {
     $id = $_GET['hapus_motor'];
+    $q_select = "SELECT * FROM s_motor where id = '$id'";
+    $data_motor = mysqli_query($conn, $q_select);
+    $motor = mysqli_fetch_assoc($data_motor);
+
+    unlink("../foto_motor/" . $motor['foto']);
     $query = "DELETE FROM s_motor where id = '$id'";
     mysqli_query($conn, $query);
     echo "<script>alert('Data berhasil dihapus');</script>";
@@ -167,6 +172,11 @@ if (isset($_POST['edit_mobil'])) {
 }
 if (isset($_GET['hapus_mobil'])) {
     $id = $_GET['hapus_mobil'];
+    $q_select = "SELECT * FROM s_mobil where id = '$id'";
+    $data_mobil = mysqli_query($conn, $q_select);
+    $mobil = mysqli_fetch_assoc($data_mobil);
+
+    unlink("../foto_mobil/" . $mobil['foto']);
     $query = "DELETE FROM s_mobil where id = '$id'";
     mysqli_query($conn, $query);
     echo "<script>alert('Data berhasil dihapus');</script>";
