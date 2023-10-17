@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Tentang kami</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="rgtrans,travel,rg,trans,rgtrans solo,travel solo,rg trans" name="keywords">
+    <meta content="RG-Trans berkomiten tinggi terhadap efisiensi dan ketepatan waktu, dua nilai inti yang sangat dijunjung oleh RG-Trans. Dengan latar belakang yang kuat dalam transportasi dan logistik. RG-Trans memiliki pengalaman dalam mengelola dan menjaga kendaraan tetap dalam kondisi prima" name="description">
     <?php require_once('layout/_css.php') ?>
 </head>
 
@@ -30,7 +31,7 @@
     </div>
     <!-- Page Header End -->
 
-      <!-- Service Start -->
+    <!-- Service Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-4">
@@ -53,7 +54,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="d-flex py-5 px-4"> 
+                    <div class="d-flex py-5 px-4">
                         <i class="fa fa-3x fa fa-3x fa-cart-plus text-primary flex-shrink-0"></i>
                         <div class="ps-4">
                             <h5 class="mb-3">Harga Terbaik</h5>
@@ -114,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

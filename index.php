@@ -1,31 +1,32 @@
 <?php
 require_once('koneksi.php');
-    $motor = mysqli_query($conn,"SELECT COUNT(CONVERT(judul, SIGNED)) As Nilai FROM s_motor;");
-    $datamotor = mysqli_fetch_assoc($motor);
-    $mobil = mysqli_query($conn,"SELECT COUNT(CONVERT(judul, SIGNED)) As Nilai FROM s_mobil;");
-    $datamobil = mysqli_fetch_assoc($mobil);
-    $pc = mysqli_query($conn,"SELECT COUNT(CONVERT(rute, SIGNED)) As Nilai FROM privatecharter;");
-    $datapc = mysqli_fetch_assoc($pc);   
+$motor = mysqli_query($conn, "SELECT COUNT(CONVERT(judul, SIGNED)) As Nilai FROM s_motor;");
+$datamotor = mysqli_fetch_assoc($motor);
+$mobil = mysqli_query($conn, "SELECT COUNT(CONVERT(judul, SIGNED)) As Nilai FROM s_mobil;");
+$datamobil = mysqli_fetch_assoc($mobil);
+$pc = mysqli_query($conn, "SELECT COUNT(CONVERT(rute, SIGNED)) As Nilai FROM privatecharter;");
+$datapc = mysqli_fetch_assoc($pc);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>RG-Trans</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-   <?php require_once('layout/_css.php') ?>
+    <meta content="rgtrans,travel,rg,trans,rgtrans solo,travel solo,rg trans" name="keywords">
+    <meta content="RG-Trans berkomiten tinggi terhadap efisiensi dan ketepatan waktu, dua nilai inti yang sangat dijunjung oleh RG-Trans. Dengan latar belakang yang kuat dalam transportasi dan logistik. RG-Trans memiliki pengalaman dalam mengelola dan menjaga kendaraan tetap dalam kondisi prima" name="description">
+    <?php require_once('layout/_css.php') ?>
 </head>
 
 <body>
-   <?php require_once('layout/_topbar.php') ?>
-   <?php require_once('layout/_navbar.php') ?>
+    <?php require_once('layout/_topbar.php') ?>
+    <?php require_once('layout/_navbar.php') ?>
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                
+
                 <div class="carousel-item active">
                     <img class="w-100" src="carserv/img/bg1.jpg" alt="Image">
                     <div class="carousel-caption d-flex align-items-center">
@@ -60,7 +61,7 @@ require_once('koneksi.php');
                         </div>
                     </div>
                 </div>
-                 
+
                 <div class="carousel-item">
                     <img class="w-100" src="carserv/img/a.jpg" alt="Image">
                     <div class="carousel-caption d-flex align-items-center">
@@ -72,7 +73,7 @@ require_once('koneksi.php');
                                     <a href="pc.php" class="btn btn-primary text-white py-3 px-5 animated slideInDown">SELENGKAPNYA<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                                    <img class="carserv/img-fluid" src="carserv/img/maps.png" width="400px"alt="">
+                                    <img class="carserv/img-fluid" src="carserv/img/maps.png" width="400px" alt="">
                                 </div>
                             </div>
                         </div>
@@ -89,20 +90,18 @@ require_once('koneksi.php');
                                     <a href="pariwisata.php" class="btn btn-primary text-white py-3 px-5 animated slideInDown">SELENGKAPNYA<i class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                                    <img class="carserv/img-fluid" src="carserv/img/trs.png" width="410px"alt="">
+                                    <img class="carserv/img-fluid" src="carserv/img/trs.png" width="410px" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -132,7 +131,7 @@ require_once('koneksi.php');
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="d-flex py-5 px-4"> 
+                    <div class="d-flex py-5 px-4">
                         <i class="fa fa-3x fa fa-3x fa-cart-plus text-primary flex-shrink-0"></i>
                         <div class="ps-4">
                             <h5 class="mb-3">Harga Terbaik</h5>
@@ -144,8 +143,8 @@ require_once('koneksi.php');
         </div>
     </div>
     <!-- Service End -->
-     <!-- Service Start -->
-     <div id="layanan" class="container-xxl service py-5">
+    <!-- Service Start -->
+    <div id="layanan" class="container-xxl service py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-primary text-uppercase">// Our Services //</h6>
@@ -153,43 +152,34 @@ require_once('koneksi.php');
             </div>
             <div class="row g-4  wow fadeInUp justify-content-center" data-wow-delay="0.3s">
                 <div class="col-lg-3 col-sm-5 wow fadeInUp text-center">
-                <a href="sewamotor.php" > <img src="carserv/img/mot.png" class="services_img" width="220px" 
-                  style="max-width:540px; 
+                    <a href="sewamotor.php"> <img src="carserv/img/mot.png" class="services_img" width="220px" style="max-width:540px; 
                               box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
                               border-radius: 20px;  
-                              "
-                
-                ></a>
-                <a href="sewamotor.php"><button class="btn btn-primary mt-4" style="border-radius:100px;">SELENGKAPNYA</button></a>
-                </div>  
+                              "></a>
+                    <a href="sewamotor.php"><button class="btn btn-primary mt-4" style="border-radius:100px;">SELENGKAPNYA</button></a>
+                </div>
                 <div class="col-lg-3 col-sm-5 wow fadeInUp  text-center">
-                <a href="sewamobil.php" > <img src="carserv/img/mob.png" class="services_img" width="220px" 
-                  style="max-width:540px; 
+                    <a href="sewamobil.php"> <img src="carserv/img/mob.png" class="services_img" width="220px" style="max-width:540px; 
                               box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
                               border-radius: 20px;  
-                              "
-                ></a>
-                <a href="sewamobil.php"><button class="btn btn-primary mt-4" style="border-radius:100px;">SELENGKAPNYA</button></a>
-                </div>  
+                              "></a>
+                    <a href="sewamobil.php"><button class="btn btn-primary mt-4" style="border-radius:100px;">SELENGKAPNYA</button></a>
+                </div>
                 <div class="col-lg-3 col-sm-5 wow fadeInUp  text-center">
-                <a href="pc.php" > <img src="carserv/img/pri.png" class="services_img" width="220px" 
-                  style="max-width:540px; 
+                    <a href="pc.php"> <img src="carserv/img/pri.png" class="services_img" width="220px" style="max-width:540px; 
                               box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
                               border-radius: 20px;  
-                              "
-                ></a>
-                <a href="pc.php"><button class="btn btn-primary mt-4" style="border-radius:100px;">SELENGKAPNYA</button></a>
-                </div>  
+                              "></a>
+                    <a href="pc.php"><button class="btn btn-primary mt-4" style="border-radius:100px;">SELENGKAPNYA</button></a>
+                </div>
                 <div class="col-lg-3 col-sm-5 wow fadeInUp  text-center">
-                <a href="pariwisata.php" > <img src="carserv/img/par.png" class="services_img" width="220px" 
-                  style="max-width:540px; 
+                    <a href="pariwisata.php"> <img src="carserv/img/par.png" class="services_img" width="220px" style="max-width:540px; 
                               box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
                               border-radius: 20px;  
-                              "
-                ></a>
-                <a href="pariwisata.php"><button class="btn btn-primary mt-4" style="border-radius:100px;">SELENGKAPNYA</button></a>
-                </div>  
-               
+                              "></a>
+                    <a href="pariwisata.php"><button class="btn btn-primary mt-4" style="border-radius:100px;">SELENGKAPNYA</button></a>
+                </div>
+
             </div>
         </div>
     </div>
@@ -251,27 +241,27 @@ require_once('koneksi.php');
     <!-- Fact Start -->
     <div class="container-fluid fact bg-dark my-5 py-5">
         <div class="container">
-            <div class="row g-3">                
-                <?php foreach($datamotor as $motor) {?>
-                <div class="col-md-4 col-lg-4 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
-                    <h2 class="text-white mb-2" data-toggle="counter-up"><?=$motor?></h2>
-                    <p class="text-white mb-0">Pilihan Motor</p>
-                </div>
+            <div class="row g-3">
+                <?php foreach ($datamotor as $motor) { ?>
+                    <div class="col-md-4 col-lg-4 text-center wow fadeIn" data-wow-delay="0.3s">
+                        <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
+                        <h2 class="text-white mb-2" data-toggle="counter-up"><?= $motor ?></h2>
+                        <p class="text-white mb-0">Pilihan Motor</p>
+                    </div>
                 <?php } ?>
-                <?php foreach($datamobil as $mobil) {?>
-                <div class="col-md-4 col-lg-4 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <i class="fa fa-car fa-2x text-white mb-3"></i>
-                    <h2 class="text-white mb-2" data-toggle="counter-up"><?=$mobil?></h2>
-                    <p class="text-white mb-0">Pilihan Mobil</p>
-                </div>
+                <?php foreach ($datamobil as $mobil) { ?>
+                    <div class="col-md-4 col-lg-4 text-center wow fadeIn" data-wow-delay="0.7s">
+                        <i class="fa fa-car fa-2x text-white mb-3"></i>
+                        <h2 class="text-white mb-2" data-toggle="counter-up"><?= $mobil ?></h2>
+                        <p class="text-white mb-0">Pilihan Mobil</p>
+                    </div>
                 <?php } ?>
-                <?php foreach($datapc as $pc) {?>
-                <div class="col-md-4 col-lg-4 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <i class="fa fa-check fa-2x text-white mb-3"></i>
-                    <h2 class="text-white mb-2" data-toggle="counter-up"><?=$pc?></h2>
-                    <p class="text-white mb-0">Rute Private Charter</p>
-                </div>
+                <?php foreach ($datapc as $pc) { ?>
+                    <div class="col-md-4 col-lg-4 text-center wow fadeIn" data-wow-delay="0.1s">
+                        <i class="fa fa-check fa-2x text-white mb-3"></i>
+                        <h2 class="text-white mb-2" data-toggle="counter-up"><?= $pc ?></h2>
+                        <p class="text-white mb-0">Rute Private Charter</p>
+                    </div>
                 <?php } ?>
             </div>
         </div>
@@ -322,7 +312,7 @@ require_once('koneksi.php');
         </div>
     </div> -->
     <div class="elfsight-app-aef26793-b903-4be1-b0d5-d923000be718"></div>
-    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script> 
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <!-- Testimonial End -->
 
 

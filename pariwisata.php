@@ -1,5 +1,5 @@
 <?php
-  require_once('koneksi.php');
+require_once('koneksi.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,15 +8,15 @@
     <meta charset="utf-8">
     <title>Pariwisata</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="rgtrans,travel,rg,trans,rgtrans solo,travel solo,rg trans" name="keywords">
+    <meta content="RG-Trans berkomiten tinggi terhadap efisiensi dan ketepatan waktu, dua nilai inti yang sangat dijunjung oleh RG-Trans. Dengan latar belakang yang kuat dalam transportasi dan logistik. RG-Trans memiliki pengalaman dalam mengelola dan menjaga kendaraan tetap dalam kondisi prima" name="description">
     <?php require_once('layout/_css.php') ?>
-    
+
 </head>
 
 <body>
-   <?php require_once('layout/_topbar.php') ?>
-   <?php require_once('layout/_navbar.php') ?>
+    <?php require_once('layout/_topbar.php') ?>
+    <?php require_once('layout/_navbar.php') ?>
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 p-0" style="background-image: url(carserv/img/a.jpg);">
         <div class="container-fluid page-header-inner py-5">
@@ -39,17 +39,16 @@
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-primary text-uppercase">// RG-Trans Services //</h6>
                 <h2 class="mb-3">Pariwisata</h2>
-                
+
             </div>
             <!-- Yogyakarta -->
             <div class="row g-4 mt-3 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-3 col-md-3 wow fadeInUp text-center">
-                    <a href="jogja.php" > <img src="carserv/img/jogja.jpg" class="services_img" width="250px" 
-                    style="max-width:540px; 
+                    <a href="jogja.php"> <img src="carserv/img/jogja.jpg" class="services_img" width="250px" style="max-width:540px; 
                                 box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
                                 border-radius: 20px;  
                                 "></a>
-                </div>  
+                </div>
                 <div class="col-lg-9">
                     <div class="ms-4">
                         <h2>Yogyakarta</h2>
@@ -61,12 +60,11 @@
             <!-- Pacitan -->
             <div class="row g-4 mt-3 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-3 col-md-3 wow fadeInUp text-center">
-                    <a href="pacitan.php" > <img src="carserv/img/pacitan.jpg" class="services_img" width="250px" 
-                    style="max-width:540px; 
+                    <a href="pacitan.php"> <img src="carserv/img/pacitan.jpg" class="services_img" width="250px" style="max-width:540px; 
                                 box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
                                 border-radius: 20px;  
                                 "></a>
-                </div>  
+                </div>
                 <div class="col-lg-9">
                     <div class="ms-4">
                         <h2>Pacitan</h2>
@@ -78,12 +76,11 @@
             <!-- Dieng  -->
             <div class="row g-4 mt-3 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-3 col-md-3 wow fadeInUp text-center">
-                    <a href="dieng.php" > <img src="carserv/img/dieng.jpg" class="services_img" width="250px" 
-                    style="max-width:540px; 
+                    <a href="dieng.php"> <img src="carserv/img/dieng.jpg" class="services_img" width="250px" style="max-width:540px; 
                                 box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
                                 border-radius: 20px;  
                                 "></a>
-                </div>  
+                </div>
                 <div class="col-lg-9">
                     <div class="ms-4">
                         <h2>Wonosobo/Dieng</h2>
@@ -95,12 +92,11 @@
             <!-- Gunung kidul -->
             <div class="row g-4 mt-3 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-3 col-md-3 wow fadeInUp text-center">
-                    <a href="gunungkidul.php" > <img src="carserv/img/gunungkidul.jpg" class="services_img" width="250px" 
-                    style="max-width:540px; 
+                    <a href="gunungkidul.php"> <img src="carserv/img/gunungkidul.jpg" class="services_img" width="250px" style="max-width:540px; 
                                 box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
                                 border-radius: 20px;  
                                 "></a>
-                </div>  
+                </div>
                 <div class="col-lg-9">
                     <div class="ms-4">
                         <h2>Gunung Kidul</h2>
