@@ -10,6 +10,7 @@ require_once('koneksi.php');
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="rgtrans,travel,rg,trans,rgtrans solo,travel solo,rg trans" name="keywords">
     <meta content="RG-Trans berkomiten tinggi terhadap efisiensi dan ketepatan waktu, dua nilai inti yang sangat dijunjung oleh RG-Trans. Dengan latar belakang yang kuat dalam transportasi dan logistik. RG-Trans memiliki pengalaman dalam mengelola dan menjaga kendaraan tetap dalam kondisi prima" name="description">
+    <link rel="shortcut icon" href="./carserv/img/iconrg.png">
     <?php require_once('layout/_css.php') ?>
     <style>
         .text-decoration-none {

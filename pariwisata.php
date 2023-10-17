@@ -11,7 +11,7 @@ require_once('koneksi.php');
     <meta content="rgtrans,travel,rg,trans,rgtrans solo,travel solo,rg trans" name="keywords">
     <meta content="RG-Trans berkomiten tinggi terhadap efisiensi dan ketepatan waktu, dua nilai inti yang sangat dijunjung oleh RG-Trans. Dengan latar belakang yang kuat dalam transportasi dan logistik. RG-Trans memiliki pengalaman dalam mengelola dan menjaga kendaraan tetap dalam kondisi prima" name="description">
     <?php require_once('layout/_css.php') ?>
-
+    <link rel="shortcut icon" href="./carserv/img/iconrg.png">
 </head>
 
 <body>
