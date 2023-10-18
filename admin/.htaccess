@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^rg-trans/admin/(.*)$ /index.php [R=301,L]
