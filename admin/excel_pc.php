@@ -10,36 +10,49 @@
     
     $data = mysqli_query($conn,"SELECT * FROM ds_privatecharter WHERE tglwkt_sewa >= '$dari' AND tglwkt_sewa <= '$sampai'");
 ?>
-    <h3>LAPORAN PENYEWAAN SEPEDA MOTOR <?php echo "$dari s/d $sampai"?></h3>
-        <table width="100%" border="1" class="text-center">
+    <h3>LAPORAN PRIVATE CHARTER <?php echo "$dari s/d $sampai"?></h3>
+        <table width="100%" class="text-center">
             <thead>
             <tr class="text-center">
-            <th>No</th>
-            <th>Nama</th>
-            <th>Alamat</th>
-            <th>No Telepon</th>
-            <th>Tanggal waktu sewa</th>
-            <th>Alamat Penjemputan</th>
-            <th>Harga</th>
-            <th>Rute</th>
+            <th style="border:1px solid black;">No</th>
+            <th style="border:1px solid black;">Nama</th>
+            <th style="border:1px solid black;">Alamat</th>
+            <th style="border:1px solid black;">No Telepon</th>
+            <th style="border:1px solid black;">Tanggal waktu sewa</th>
+            <th style="border:1px solid black;">Alamat Penjemputan</th>
+            <th style="border:1px solid black;">Rute</th>
+            <th style="border:1px solid black;">Harga</th>
             </tr>
             </thead>
             <tbody>
             <?php 
             $no=1;
-            while($r=mysqli_fetch_array($data)){ ?>
+            $totalH = 0;
+            while($r=mysqli_fetch_array($data)){ 
+                $totalH += $r['harga'];
+            ?>
                 <tr class="text-center">
-                <td>
-                    <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong><?= $no++;?></strong>
-                </td>
-                <td><?= $r['nama'];?></td>
-                <td><?= $r['alamat'];?></td>
-                <td><?= $r['telp'];?></td>
-                <td><?= $r['tglwkt_sewa'];?></td>
-                <td><?= $r['alamat_jemput'];?></td>
-                <td><?= rupiah($r['harga']);?></td>
-                <td><?= $r['rute'];?></td>
+                <td style="border:1px solid black;"><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong><?= $no++;?></strong></td>
+                <td style="border:1px solid black;"><?= $r['nama'];?></td>
+                <td style="border:1px solid black;"><?= $r['alamat'];?></td>
+                <td style="border:1px solid black;"><?= $r['telp'];?></td>
+                <td style="border:1px solid black;"><?= $r['tglwkt_sewa'];?></td>
+                <td style="border:1px solid black;"><?= $r['alamat_jemput'];?></td>
+                <td style="border:1px solid black;"><?= $r['rute'];?></td>
+                <td style="border:1px solid black;"><?= rupiah($r['harga']);?></td>
                 </tr>             
                 <?php }?>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td style="border:none;"></td>
+                    <td style="border:none;"></td>
+                    <td style="border:none;"></td>
+                    <td style="border:none;"></td>
+                    <td style="border:none;"></td>
+                    <td style="border:none;"></td>
+                    <td style="border:1px solid black;">Total : </td>
+                    <td style="border:1px solid black;"><?= rupiah($totalH) ?></td>
+                </tr>
+            </tfoot>
     </table>

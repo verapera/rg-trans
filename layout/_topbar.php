@@ -4,7 +4,7 @@
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-4">
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Jl.Juanda 277, Pucangsawit, Jebres, Solo</small>
+                    <small>Perumahan Pokoh baru, Gg. Pandan Wangi No.A12, RT.13/RW.06, Pokoh, Ngijo, Tasikmadu, Karanganyar, Jawa Tengah</small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">

@@ -4,7 +4,7 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Alamat</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jl.Juanda 277, Pucangsawit, Jebres, Solo</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Perumahan Pokoh baru, Gg. Pandan Wangi No.A12, RT.13/RW.06, Pokoh, Ngijo, Tasikmadu, Karanganyar, Jawa Tengah</p>
                     <p class="mb-2"> <a style="color:inherit;" href="https://wa.me/6281333166131" target="blank"><i class="fa fa-phone-alt me-3"></i>0813 3316 6131</a></p>
                     <p class="mb-2"> <a style="color:inherit;" href="mailto:rgtransthebest@gmail.com"  target="blank"><i class="fa fa-envelope me-3"></i>rgtransthebest@gmail.com</a></p>
                 </div>

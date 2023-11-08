@@ -60,7 +60,7 @@ require_once('koneksi.php');
                     </div>
                 </div>
                 <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
-                    <iframe class="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.0559666769022!2d110.85124247419652!3d-7.568877692445241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a165521c22b5d%3A0xaf0eca7a721ea132!2sJl.%20Juanda%20No.277%2C%20Pucangsawit%2C%20Kec.%20Jebres%2C%20Kota%20Surakarta%2C%20Jawa%20Tengah%2057125%2C%20Indonesia!5e0!3m2!1sen!2sbd!4v1697007080524!5m2!1sen!2sbd" frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe class="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8659433489206!2d110.9447912!3d-7.5895668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a19ea26e6ae3b%3A0x302331aeed5c24b!2sRGTrans!5e0!3m2!1sid!2sid!4v1699425513240!5m2!1sid!2sid" frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
         </div>

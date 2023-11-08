@@ -66,7 +66,7 @@ $data = mysqli_fetch_array($hasil);
                         <div class="text-center md-3">
                             <a href="<?= 'booking_mobil.php?mobil=' . $data['id'] ?>"><button class="btn btn-primary mt-2 font-weight-bold" style="border-radius:100px;">Booking</button></a>
                             <!-- <a href="<?= ($nama == 'no') ? 'login.php' : 'b_motor.php?motor=' . $data['id'] ?>"><button class="btn_booking items-center"> Booking</button></a> -->
-                            <a href="https://wa.me/6289672284196" target="blank">
+                            <a href="https://wa.me/6281333166131" target="blank">
                                 <img src="logo/waa.png" width="58" />
                             </a>
                         </div>
