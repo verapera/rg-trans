@@ -49,7 +49,7 @@
                     
                     <div class="card-body">
                       <div>
-                        <label for="judul" class="form-label">Judul</label>
+                        <label for="judul" class="form-label">Jenis motor</label>
                         <input class="form-control" type="text" name="judul" id="judul">
                       </div>
                       <div>

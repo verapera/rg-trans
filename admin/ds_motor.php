@@ -60,7 +60,7 @@
                       <thead>
                         <tr>
                           <th>No</th>
-                          <th>Judul</th>
+                          <th>Jenis motor</th>
                           <th>Foto</th>
                           <th>H.Paket 1</th>
                           <th>H.Paket 2</th>

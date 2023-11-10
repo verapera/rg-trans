@@ -50,7 +50,7 @@ $data = mysqli_fetch_array($hasil);
                         <thead>
                           <tr>
                             <th>No</th>
-                            <th>Judul</th>
+                            <th>Jenis mobil</th>
                             <th>Foto</th>
                             <th>H.Paket1</th>
                             <th>H.Paket2</th>

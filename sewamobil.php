@@ -42,7 +42,7 @@ $data = mysqli_fetch_array($hasil);
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-primary text-uppercase">// RG-Trans Services //</h6>
-                <h2 class="mb-5">Daftar layanan Mobil Self Drive & Plus Driver</h2>
+                <h2 class="mb-5">Daftar layanan Mobil Plus Driver</h2>
             </div>
             <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
                 <?php foreach ($hasil as $data) { ?>
