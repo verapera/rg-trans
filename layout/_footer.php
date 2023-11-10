@@ -16,16 +16,16 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Layanan</h4>
-                    <a class="btn btn-link" href="sewamotor.php">Sewa Motor</a>
-                    <a class="btn btn-link" href="sewamobil.php">Sewa Mobil</a>
-                    <a class="btn btn-link" href="pc.php">Private Charter</a>
-                    <a class="btn btn-link" href="pariwisata.php">Pariwisata</a>
+                    <a class="btn btn-link" href="sewamotor">Sewa Motor</a>
+                    <a class="btn btn-link" href="sewamobil">Sewa Mobil</a>
+                    <a class="btn btn-link" href="pc">Private Charter</a>
+                    <a class="btn btn-link" href="pariwisata">Pariwisata</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Contact</h4>
                     <p>Hubungi kami bila ada pertanyaan yang di ajukan</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <a href="contact.php"><button type="button" class="btn btn-primary w-50 py-6 ps-4 pe-4">Contact</button></a>
+                    <a href="contact"><button type="button" class="btn btn-primary w-50 py-6 ps-4 pe-4">Contact</button></a>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="index.php">RG-Trans</a>, All Right Reserved 
+                        &copy; <a class="border-bottom" href="index">RG-Trans</a>, All Right Reserved 
                         <script>
                             document.write(new Date().getFullYear());
                         </script>

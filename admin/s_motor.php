@@ -73,7 +73,7 @@
                         <input class="form-control" type="text" name="kelengkapan" id="kelengkapan">
                       </div>
                       <button class="btn btn-primary mt-3" type="submit" name="data_motor">Submit</button>
-                      <a href="ds_motor.php" class="btn btn-outline-primary mt-3">
+                      <a href="ds_motor" class="btn btn-outline-primary mt-3">
                           <span class="tf-icons bx bx-task"></span>&nbsp; Data Motor
                       </a> 
                   </div>

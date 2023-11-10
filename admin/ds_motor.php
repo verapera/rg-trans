@@ -44,7 +44,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y ">
               <div> 
-                  <a href="s_motor.php" class="btn btn-outline-primary">
+                  <a href="s_motor" class="btn btn-outline-primary">
                         <span class="tf-icons bx bx-task"></span>&nbsp; Input data Motor
                   </a>      
                 </div>
@@ -87,7 +87,7 @@
                                 <i class="bx bx-dots-vertical-rounded"></i>
                               </button>
                                 <div class="dropdown-menu" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(-90.5px, 27.5px, 0px);">
-                                    <a class="dropdown-item"  href="edit_motor.php?edit_motor=<?=$data['id']?>" ><i class="bx bx-edit-alt me-1"></i>Edit</a>
+                                    <a class="dropdown-item"  href="edit_motor?edit_motor=<?=$data['id']?>" ><i class="bx bx-edit-alt me-1"></i>Edit</a>
                                     <a class="dropdown-item" onclick="return confirm('Yakin menghapus data <?= $data['judul'];?> dari data motor ?')"href="proses.php?hapus_motor=<?= $data['id'] ?>"><i class="bx bx-trash me-1"></i> Hapus</td>
                                 </div>
                             </div>

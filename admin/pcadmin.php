@@ -44,7 +44,7 @@
             <!-- Content -->
             <div class="container-xxl flex-grow-1 container-p-y ">
               <div> 
-                  <a href="inputpc.php" class="btn btn-outline-primary">
+                  <a href="inputpc" class="btn btn-outline-primary">
                         <span class="tf-icons bx bx-task"></span>&nbsp; Input data
                   </a>      
                 </div>
@@ -82,7 +82,7 @@
                                 <i class="bx bx-dots-vertical-rounded"></i>
                               </button>
                                 <div class="dropdown-menu" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(-90.5px, 27.5px, 0px);">
-                                    <a class="dropdown-item"  href="edit_pc.php?edit_pc=<?=$data['id']?>" ><i class="bx bx-edit-alt me-1"></i>Edit</a>
+                                    <a class="dropdown-item"  href="edit_pc?edit_pc=<?=$data['id']?>" ><i class="bx bx-edit-alt me-1"></i>Edit</a>
                                     <a class="dropdown-item" onclick="return confirm('Yakin menghapus rute <?= $data['rute'];?> dari data private charter ?')"href="proses.php?hapus_pc=<?= $data['id'] ?>"><i class="bx bx-trash me-1"></i> Hapus</td>
                                 </div>
                             </div>

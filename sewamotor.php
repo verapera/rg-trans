@@ -58,7 +58,7 @@ $data = mysqli_fetch_array($hasil);
                             Kelengkapan : <br><?= $data['kelengkapan'] ?>
                         </p>
                         <div class="text-center md-3">
-                            <a href="<?= 'booking_motor.php?motor=' . $data['id'] ?>"><button class="btn btn-primary mt-2 font-weight-bold" style="border-radius:100px;">Booking</button></a>
+                            <a href="<?= 'booking_motor?motor=' . $data['id'] ?>"><button class="btn btn-primary mt-2 font-weight-bold" style="border-radius:100px;">Booking</button></a>
                             <a href="https://wa.me/6281333166131" target="blank">
                                 <img src="logo/waa.png" width="58" />
                             </a>

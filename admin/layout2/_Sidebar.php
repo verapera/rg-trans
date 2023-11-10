@@ -53,7 +53,7 @@
     ?>
     <!-- Dashboard -->
     <li class="menu-item active">
-      <a href="admin.php" class="menu-link">
+      <a href="admin" class="menu-link">
         <i class="menu-icon tf-icons bx bx-home-circle"></i>
         <div data-i18n="Analytics">Dashboard</div>
       </a>
@@ -71,25 +71,25 @@
       </a>
 
       <ul class="menu-sub">
-        <li class="menu-item <?php if ($url[3] == "ds_motor.php") {
+        <li class="menu-item <?php if ($url[3] == "ds_motor") {
                                 echo "active";
                               } ?> ">
-          <a href="ds_motor.php" class="menu-link">
+          <a href="ds_motor" class="menu-link">
             <div data-i18n="Without menu">Sewa motor</div>
           </a>
         </li>
-        <li class="menu-item <?php if ($url[3] == "ds_mobil.php") {
+        <li class="menu-item <?php if ($url[3] == "ds_mobil") {
                                 echo "active";
                               } ?> ">
-          <a href="ds_mobil.php" class="menu-link">
+          <a href="ds_mobil" class="menu-link">
             <div data-i18n="Without navbar">Sewa mobil</div>
           </a>
         </li>
-        <li class="menu-item <?php if ($url[3] == "pcadmin.php") {
+        <li class="menu-item <?php if ($url[3] == "pcadmin") {
                                 echo "active";
                               } ?>">
-          <a href="pcadmin.php" class="menu-link">
-            <div data-i18n="Container">Private Charter</div>
+          <a href="pcadmin" class="menu-link">
+            <div data-i18n="Container">Private charter</div>
           </a>
         </li>
 
@@ -106,22 +106,22 @@
         <li class="menu-item <?php if ($url[3] == "datasewamtr.php") {
                                 echo "active";
                               } ?>">
-          <a href="datasewamtr.php" class="menu-link">
-            <div data-i18n="Without menu">Data sewa Motor</div>
+          <a href="datasewamtr" class="menu-link">
+            <div data-i18n="Without menu">Data sewa motor</div>
           </a>
         </li>
-        <li class="menu-item <?php if ($url[3] == "datasewambl.php") {
+        <li class="menu-item <?php if ($url[3] == "datasewambl") {
                                 echo "active";
                               } ?>">
-          <a href="datasewambl.php" class="menu-link">
-            <div data-i18n="Without menu">Data sewa Mobil</div>
+          <a href="datasewambl" class="menu-link">
+            <div data-i18n="Without menu">Data sewa mobil</div>
           </a>
         </li>
-        <li class="menu-item <?php if ($url[3] == "datasewapc.php") {
+        <li class="menu-item <?php if ($url[3] == "datasewapc") {
                                 echo "active";
                               } ?>">
-          <a href="datasewapc.php" class="menu-link">
-            <div data-i18n="Without menu">Data Private Charter</div>
+          <a href="datasewapc" class="menu-link">
+            <div data-i18n="Without menu">Data Private charter</div>
           </a>
         </li>
       </ul>
@@ -134,22 +134,22 @@
       </a>
 
       <ul class="menu-sub">
-        <li class="menu-item <?php if ($url[3] == "l_bmotor.php") {
+        <li class="menu-item <?php if ($url[3] == "l_bmotor") {
                                 echo "active";
                               } ?>">
-          <a href="l_bmotor.php" class="menu-link">
-            <div data-i18n="Without menu">Laporan sewa Motor</div>
+          <a href="l_bmotor" class="menu-link">
+            <div data-i18n="Without menu">Laporan sewa motor</div>
           </a>
         </li>
-        <li class="menu-item <?php if ($url[3] == "l_bmobil.php") {
+        <li class="menu-item <?php if ($url[3] == "l_bmobil") {
                                 echo "active";
                               } ?>">
-          <a href="l_bmobil.php" class="menu-link">
-            <div data-i18n="Without menu">Laporan sewa Mobil</div>
+          <a href="l_bmobil" class="menu-link">
+            <div data-i18n="Without menu">Laporan sewa mobil</div>
           </a>
         </li>
-        <li class="menu-item <?php echo ($url[3] == "l_pc.php") ? "active" : "" ?>">
-          <a href="l_pc.php" class="menu-link">
+        <li class="menu-item <?php echo ($url[3] == "l_pc") ? "active" : "" ?>">
+          <a href="l_pc" class="menu-link">
             <div data-i18n="Without menu">Laporan Private Charter</div>
           </a>
         </li>

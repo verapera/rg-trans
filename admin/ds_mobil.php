@@ -35,7 +35,7 @@ $data = mysqli_fetch_array($hasil);
           <!-- Content -->
           <div class="container-xxl flex-grow-1 container-p-y ">
             <div>
-              <a href="s_mobil.php" class="btn btn-outline-primary  ">
+              <a href="s_mobil" class="btn btn-outline-primary  ">
                 <span class="tf-icons bx bx-task"></span>&nbsp; Input data Mobil
               </a>
             </div>
@@ -84,7 +84,7 @@ $data = mysqli_fetch_array($hasil);
                                     <i class="bx bx-dots-vertical-rounded"></i>
                                   </button>
                                   <div class="dropdown-menu" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(-90.5px, 27.5px, 0px);">
-                                    <a class="dropdown-item" href="edit_mobil.php?edit_mobil=<?= $data['id'] ?>"><i class="bx bx-edit-alt me-1"></i>Edit</a>
+                                    <a class="dropdown-item" href="edit_mobil?edit_mobil=<?= $data['id'] ?>"><i class="bx bx-edit-alt me-1"></i>Edit</a>
                                     <a class="dropdown-item" onclick="return confirm('Yakin menghapus data <?= $data['judul']; ?> dari data mobil ?')" href="proses.php?hapus_mobil=<?= $data['id'] ?>"><i class="bx bx-trash me-1"></i> Hapus
                               </td>
                     </div>

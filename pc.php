@@ -71,7 +71,7 @@ $data = mysqli_fetch_array($hasil);
                                 <td><?= $data['rute']; ?></td>
                                 <td><?= $data['sheat']; ?> orang</td>
                                 <td><?= rupiah($data['harga']); ?></td>
-                                <td><a href="<?= 'bookingpc.php?rute=' . $data['id'] ?>"><button class="btn btn-primary" style="border-radius:100px;">✓</button></a></td>
+                                <td><a href="<?= 'bookingpc?rute=' . $data['id'] ?>"><button class="btn btn-primary" style="border-radius:100px;">✓</button></a></td>
                             </tr>
                         <?php $no++;
                         } ?>

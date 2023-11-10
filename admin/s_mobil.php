@@ -43,7 +43,7 @@
              <!-- Input menu Start -->
              
              <form enctype="multipart/form-data" action="proses.php" method="POST">
-             <div class="col-md-12">
+             <div class="col-md-8">
              <div class="card">
                     <h5 class="card-header">Form input sewa mobil</h5>
                     <div class="card-body">
